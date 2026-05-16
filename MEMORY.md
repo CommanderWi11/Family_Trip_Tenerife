@@ -67,3 +67,16 @@ Full detail in `Agenda.md`.
 
 - Candela's real birthday is 5 Jul; this is the anticipated celebration
 - Plan is flexible Sunday; departures are escalonated by each family's flight
+
+## Public Family-Facing Page
+
+- **File:** `index.html` (single-file static page, Spanish, read-only)
+- **Hosting:** GitHub Pages on `CommanderWi11/family-trip-tenerife` (repo must be **public** for free Pages)
+- **URL (once enabled):** https://commanderwi11.github.io/family-trip-tenerife/
+- **Privacy model:** security-by-obscurity. Repo is public, but URL is shared only via WhatsApp.
+- **Sanitization rules — do NOT add to `index.html`:**
+  - Last names (first names only)
+  - Phone numbers, emails
+  - Flight numbers or ticket references
+  - Anything you wouldn't put on a postcard
+- **Updates:** edit `index.html`, commit, push → Pages redeploys in ~1 min.
