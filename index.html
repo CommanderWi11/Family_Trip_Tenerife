@@ -363,10 +363,9 @@
       display: block;
       object-fit: contain;
     }
-    /* Video flavour of Rumi — multiply blend drops the white bg into the dark hero */
+    /* Video flavour of Rumi — alpha already baked in, no blend mode needed */
     video.rumi {
-      mix-blend-mode: multiply;
-      filter: saturate(1.15) brightness(1.05);
+      filter: drop-shadow(-10px 18px 30px rgba(0, 0, 0, 0.5));
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
@@ -1170,7 +1169,8 @@
                preload="auto"
                poster="Resources/rumi.png"
                aria-label="Rumi animada — la heroína del cumple">
-          <source src="Resources/mp_.mp4" type="video/mp4" />
+          <source src="Resources/rumi.webm" type="video/webm" />
+          <source src="Resources/rumi.mov" type='video/mp4; codecs="hvc1"' />
           <img src="Resources/Rumi_-_Full_Body.webp" alt="Rumi (KPop Demon Hunters), la heroína del cumple" />
         </video>
       </div>
