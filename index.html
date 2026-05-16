@@ -72,6 +72,28 @@
     a { color: var(--magenta); text-decoration-thickness: 2px; text-underline-offset: 3px; }
     a:hover { color: var(--hot-pink); }
 
+    /* Venue logo badge — wraps a Google favicon to feel like a real logo */
+    .venue-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 2.5px solid var(--ink);
+      border-radius: 12px;
+      box-shadow: 3px 3px 0 var(--ink);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .venue-logo img {
+      display: block;
+      width: 100%; height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+    .venue-logo.sm { width: 28px; height: 28px; border-radius: 8px; box-shadow: 2px 2px 0 var(--ink); }
+    .venue-logo.md { width: 44px; height: 44px; }
+    .venue-logo.lg { width: 64px; height: 64px; border-radius: 16px; }
+
     .wrap { max-width: 1180px; margin: 0 auto; padding: 0 22px; }
 
     /* ============================================================
@@ -446,6 +468,16 @@
       border-radius: 24px;
       box-shadow: 0 8px 0 var(--ink);
       position: relative;
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    a.step:hover {
+      box-shadow: 0 14px 0 var(--ink), 0 22px 30px rgba(216, 27, 96, 0.18);
+    }
+    .step .step-logo {
+      margin: 0 auto 12px;
     }
     .step:nth-child(1) { background: linear-gradient(180deg, #fff 0%, var(--baby-blue) 100%); transform: rotate(-1deg); }
     .step:nth-child(3) { background: linear-gradient(180deg, #fff 0%, var(--bubble) 100%); transform: rotate(0.5deg); }
@@ -546,8 +578,17 @@
       padding: 22px;
       box-shadow: 0 8px 0 var(--ink);
       position: relative;
-      transition: transform 0.25s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
       overflow: hidden;
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
+    }
+    a.tile:hover { box-shadow: 0 12px 0 var(--ink), 0 18px 28px rgba(216, 27, 96, 0.15); }
+    .tile-logo-corner {
+      position: absolute;
+      top: 14px;
+      right: 14px;
     }
     .board .tile:nth-child(1) { background: linear-gradient(160deg, #ffffff 0%, var(--bubble) 100%); transform: rotate(-1deg); }
     .board .tile:nth-child(2) { background: linear-gradient(160deg, #ffffff 0%, var(--baby-blue) 100%); transform: rotate(0.6deg); }
@@ -759,10 +800,25 @@
     .event .what { font-weight: 700; margin-top: 2px; color: var(--ink); }
     .event .detail { font-size: 0.95rem; color: var(--ink-soft); margin-top: 4px; font-weight: 500; }
     .event .where {
-      display: inline-block; margin-top: 6px; padding: 3px 12px;
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 6px; padding: 4px 12px 4px 4px;
       font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
       background: var(--ink); color: #fff; border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
+    .event a.where:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      color: #fff;
+    }
+    .event .where .venue-logo {
+      width: 22px; height: 22px;
+      border-width: 1.5px;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+    .event .where.text-only { padding: 4px 12px; }
 
     /* ============================================================
        MAP
@@ -838,6 +894,17 @@
     .check .ck-title {
       font-weight: 700; font-size: 1.05rem; color: var(--ink);
     }
+    .check .ck-title a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-decoration-color: var(--magenta);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+    .check .ck-title a:hover { color: var(--magenta); }
+    .check .ck-logo { margin-top: 2px; }
+    .map-legend strong a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--magenta); }
+    .map-legend strong a:hover { color: var(--magenta); }
     .check.done .ck-title { text-decoration: line-through; opacity: 0.7; }
     .check .ck-detail { font-size: 0.92rem; color: var(--ink-soft); margin-top: 3px; font-weight: 500; }
     .status-pill {
@@ -1122,23 +1189,32 @@
     <h2>1, 2, 3 · <em>¡ÉPICO!</em></h2>
 
     <div class="steps-grid">
-      <div class="step">
+      <a class="step" href="https://lalagunagranhotel.com/" target="_blank" rel="noopener">
         <div class="step-num">1</div>
+        <span class="venue-logo lg step-logo">
+          <img src="https://www.google.com/s2/favicons?domain=lalagunagranhotel.com&sz=128" alt="Laguna Gran Hotel" loading="lazy" />
+        </span>
         <h3>Llegamos</h3>
         <p>El viernes nos juntamos en La Laguna en distintas tandas — ferry, vuelos y un solo objetivo.</p>
-      </div>
+      </a>
       <span class="step-arrow">→</span>
-      <div class="step">
+      <a class="step" href="https://www.loroparque.com/" target="_blank" rel="noopener">
         <div class="step-num">2</div>
+        <span class="venue-logo lg step-logo">
+          <img src="https://www.google.com/s2/favicons?domain=loroparque.com&sz=128" alt="Loro Parque" loading="lazy" />
+        </span>
         <h3>Cumple Candela</h3>
         <p>Loro Parque por la tarde y cena con tarta sorpresa en Puerto de la Cruz.</p>
-      </div>
+      </a>
       <span class="step-arrow">→</span>
-      <div class="step">
+      <a class="step" href="https://siampark.net/" target="_blank" rel="noopener">
         <div class="step-num">3</div>
+        <span class="venue-logo lg step-logo">
+          <img src="https://www.google.com/s2/favicons?domain=siampark.net&sz=128" alt="Siam Park" loading="lazy" />
+        </span>
         <h3>Siam Park</h3>
         <p>Cabaña VIP, base de operaciones para Luca, y toboganes para los valientes.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -1153,14 +1229,17 @@
     </div>
 
     <div class="board">
-      <div class="tile">
+      <a class="tile" href="https://lalagunagranhotel.com/" target="_blank" rel="noopener">
+        <span class="venue-logo md tile-logo-corner">
+          <img src="https://www.google.com/s2/favicons?domain=lalagunagranhotel.com&sz=128" alt="Laguna Gran Hotel" loading="lazy" />
+        </span>
         <span class="tile-tag">Base</span>
         <div class="tile-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
         </div>
         <h3>Laguna Gran Hotel</h3>
         <p>La Laguna · 2 noches · invitación de Angeles</p>
-      </div>
+      </a>
       <div class="tile">
         <span class="tile-tag">Cuándo</span>
         <div class="tile-icon">
@@ -1311,11 +1390,11 @@
         <p class="day-sub">Llegada del grupo, Loro Parque y cena de cumpleaños en Puerto de la Cruz.</p>
         <ol class="events">
           <li class="event"><div class="time">Mañana</div><div class="what">Desayuno con Javier</div><div class="detail">En el casco antiguo de La Laguna o en el hotel cuando llegue.</div></li>
-          <li class="event"><div class="time">11:00</div><div class="what">Llegan Angeles, Carlos y Daniela</div><div class="detail">Atracan en Santa Cruz, suben al hotel, dejan maletas y hacen check-in si la habitación está lista.</div><span class="where">Hotel · La Laguna</span></li>
-          <li class="event"><div class="time">13:00</div><div class="what">Llegan Carmen y Candela</div><div class="detail">Vuelo a TFN. Alquilan coche y salen ~14:00 hacia Puerto de la Cruz.</div><span class="where">TFN · Puerto de la Cruz</span></li>
+          <li class="event"><div class="time">11:00</div><div class="what">Llegan Angeles, Carlos y Daniela</div><div class="detail">Atracan en Santa Cruz, suben al hotel, dejan maletas y hacen check-in si la habitación está lista.</div><a class="where" href="https://lalagunagranhotel.com/" target="_blank" rel="noopener"><span class="venue-logo"><img src="https://www.google.com/s2/favicons?domain=lalagunagranhotel.com&sz=64" alt="" loading="lazy"/></span>Hotel · La Laguna</a></li>
+          <li class="event"><div class="time">13:00</div><div class="what">Llegan Carmen y Candela</div><div class="detail">Vuelo a TFN. Alquilan coche y salen ~14:00 hacia Puerto de la Cruz.</div><span class="where text-only">TFN · Puerto de la Cruz</span></li>
           <li class="event"><div class="time">13:45</div><div class="what">Luis, Colombina, Leo y Luca salen hacia Loro Parque</div><div class="detail">Angeles, Carlos y Daniela suben con el coche de Angeles (30 min desde La Laguna).</div></li>
-          <li class="event"><div class="time">15:00 – 18:00</div><div class="what">Loro Parque</div><div class="detail">Entradas online la noche anterior (descuento). Prioridad con cierre a 18:00: show de orcas → pingüinos (Planet Penguin) → Kinderlandia. Luca: carrito + porteo, sombra, tomas a demanda. Encargar la tarta sorpresa al restaurante por la tarde.</div><span class="where">Puerto de la Cruz</span></li>
-          <li class="event"><div class="time">20:30</div><div class="what">Cena de cumpleaños · Brunelli's Steakhouse</div><div class="detail">Terraza con vista al mar y al Teide. Reservar para 11 pax. Avisar del cumple + tarta sorpresa. Jota llega directo (taxi desde TFN o lo pasa a buscar Carmen).</div><span class="where">Punta Brava · Puerto de la Cruz</span></li>
+          <li class="event"><div class="time">15:00 – 18:00</div><div class="what">Loro Parque</div><div class="detail">Entradas online la noche anterior (descuento). Prioridad con cierre a 18:00: show de orcas → pingüinos (Planet Penguin) → Kinderlandia. Luca: carrito + porteo, sombra, tomas a demanda. Encargar la tarta sorpresa al restaurante por la tarde.</div><a class="where" href="https://www.loroparque.com/" target="_blank" rel="noopener"><span class="venue-logo"><img src="https://www.google.com/s2/favicons?domain=loroparque.com&sz=64" alt="" loading="lazy"/></span>Loro Parque · Pto. de la Cruz</a></li>
+          <li class="event"><div class="time">20:30</div><div class="what">Cena de cumpleaños · Brunelli's Steakhouse</div><div class="detail">Terraza con vista al mar y al Teide. Reservar para 11 pax. Avisar del cumple + tarta sorpresa. Jota llega directo (taxi desde TFN o lo pasa a buscar Carmen).</div><a class="where" href="https://brunellis.com/en/" target="_blank" rel="noopener"><span class="venue-logo"><img src="https://www.google.com/s2/favicons?domain=brunellis.com&sz=64" alt="" loading="lazy"/></span>Brunelli's · Punta Brava</a></li>
           <li class="event"><div class="time">~23:00</div><div class="what">Vuelta a La Laguna</div><div class="detail">35 minutos en coche.</div></li>
         </ol>
       </article>
@@ -1330,8 +1409,8 @@
           <li class="event"><div class="time">Temprano</div><div class="what">Llega Luisa</div><div class="detail">Javier la recoge en TFN y se incorporan al grupo (directos al sur o pasan por el hotel según hora).</div></li>
           <li class="event"><div class="time">08:00 – 08:45</div><div class="what">Desayuno en el hotel</div></li>
           <li class="event"><div class="time">09:00</div><div class="what">Salida hacia Costa Adeje</div><div class="detail">Aproximadamente 1h 10min en coche.</div></li>
-          <li class="event"><div class="time">10:00 – 17:00</div><div class="what">Siam Park</div><div class="detail">Cabaña VIP familiar (capacidad 10–12) — clave con Luca: sombra, nevera, base de operaciones. Zonas para Leo y Candela: Lost City, The Beach (olas suaves), Mai Thai River. Adultos por turnos en toboganes fuertes (Tower of Power, Dragon, Singha). Comer dentro (Beach Restaurant o Thai House).</div><span class="where">Costa Adeje</span></li>
-          <li class="event"><div class="time">Cena</div><div class="what">Informal en La Laguna</div><div class="detail">Cerca del hotel para no mover más a Luca y a Leo. Opciones: Tasca 61, La Hoya del Camello (tradicional canario) o Tasca El Obispado (más cuidada). Si alguien quiere algo simple: pizzas en Trastevere.</div><span class="where">La Laguna</span></li>
+          <li class="event"><div class="time">10:00 – 17:00</div><div class="what">Siam Park</div><div class="detail">Cabaña VIP familiar (capacidad 10–12) — clave con Luca: sombra, nevera, base de operaciones. Zonas para Leo y Candela: Lost City, The Beach (olas suaves), Mai Thai River. Adultos por turnos en toboganes fuertes (Tower of Power, Dragon, Singha). Comer dentro (Beach Restaurant o Thai House).</div><a class="where" href="https://siampark.net/" target="_blank" rel="noopener"><span class="venue-logo"><img src="https://www.google.com/s2/favicons?domain=siampark.net&sz=64" alt="" loading="lazy"/></span>Siam Park · Costa Adeje</a></li>
+          <li class="event"><div class="time">Cena</div><div class="what">Informal en La Laguna</div><div class="detail">Cerca del hotel para no mover más a Luca y a Leo. Opciones: Tasca 61, La Hoya del Camello (tradicional canario) o Tasca El Obispado (más cuidada). Si alguien quiere algo simple: pizzas en Trastevere.</div><span class="where text-only">La Laguna</span></li>
         </ol>
       </article>
 
@@ -1343,8 +1422,8 @@
         <p class="day-sub">Casco histórico, almuerzo, café en casa de Luis y vueltas escalonadas.</p>
         <ol class="events">
           <li class="event"><div class="time">Mañana</div><div class="what">Desayuno largo en el hotel</div></li>
-          <li class="event"><div class="time">11:00</div><div class="what">Paseo por el casco histórico (UNESCO)</div><div class="detail">Plaza del Adelantado → Calle Obispo Rey Redondo → Catedral → Iglesia de la Concepción. Una hora aproximadamente, con sombras y llevadero con carrito.</div><span class="where">La Laguna</span></li>
-          <li class="event"><div class="time">Almuerzo</div><div class="what">La Bola de Jorge Bosch</div><div class="detail">Canaria moderna, ambiente bonito para cerrar. Reservar 11 pax (margen flexible por los vuelos). Alternativas: Tasca 61 o Silbo Gomero.</div><span class="where">La Laguna</span></li>
+          <li class="event"><div class="time">11:00</div><div class="what">Paseo por el casco histórico (UNESCO)</div><div class="detail">Plaza del Adelantado → Calle Obispo Rey Redondo → Catedral → Iglesia de la Concepción. Una hora aproximadamente, con sombras y llevadero con carrito.</div><span class="where text-only">La Laguna</span></li>
+          <li class="event"><div class="time">Almuerzo</div><div class="what">La Bola de Jorge Bosch</div><div class="detail">Canaria moderna, ambiente bonito para cerrar. Reservar 11 pax (margen flexible por los vuelos). Alternativas: Tasca 61 o Silbo Gomero.</div><a class="where" href="https://chefjorgebosch.com/" target="_blank" rel="noopener"><span class="venue-logo"><img src="https://www.google.com/s2/favicons?domain=chefjorgebosch.com&sz=64" alt="" loading="lazy"/></span>La Bola · Tegueste</a></li>
           <li class="event"><div class="time">Tarde</div><div class="what">Visita a casa de Luis y Colombina</div><div class="detail">Plan especial: la familia pasa por casa a ver dónde vive Luis y conocer a Luca en su entorno. Café, sobremesa relajada.</div></li>
           <li class="event"><div class="time">Despedidas</div><div class="what">Escalonadas según cada vuelo</div><div class="detail">Angeles vuelve al puerto si toca; el resto a TFN o TFS.</div></li>
         </ol>
@@ -1372,11 +1451,46 @@
     </div>
 
     <ul class="map-legend">
-      <li><span class="pin hotel"></span><div><strong>Laguna Gran Hotel</strong><br/><a href="https://maps.google.com/?q=Laguna+Gran+Hotel+La+Laguna" target="_blank" rel="noopener">La Laguna · base del grupo</a></div></li>
-      <li><span class="pin loro"></span><div><strong>Loro Parque</strong><br/><a href="https://maps.google.com/?q=Loro+Parque+Puerto+de+la+Cruz" target="_blank" rel="noopener">Puerto de la Cruz · viernes tarde</a></div></li>
-      <li><span class="pin brunelli"></span><div><strong>Brunelli's Steakhouse</strong><br/><a href="https://maps.google.com/?q=Brunelli%27s+Steakhouse+Punta+Brava" target="_blank" rel="noopener">Punta Brava · cena del viernes</a></div></li>
-      <li><span class="pin siam"></span><div><strong>Siam Park</strong><br/><a href="https://maps.google.com/?q=Siam+Park+Costa+Adeje" target="_blank" rel="noopener">Costa Adeje · sábado</a></div></li>
-      <li><span class="pin bola"></span><div><strong>La Bola de Jorge Bosch</strong><br/><a href="https://maps.google.com/?q=La+Bola+de+Jorge+Bosch+La+Laguna" target="_blank" rel="noopener">La Laguna · almuerzo domingo</a></div></li>
+      <li>
+        <span class="pin hotel"></span>
+        <span class="venue-logo sm"><img src="https://www.google.com/s2/favicons?domain=lalagunagranhotel.com&sz=64" alt="" loading="lazy"/></span>
+        <div>
+          <strong><a href="https://lalagunagranhotel.com/" target="_blank" rel="noopener">Laguna Gran Hotel</a></strong><br/>
+          <a href="https://maps.google.com/?q=Laguna+Gran+Hotel+La+Laguna" target="_blank" rel="noopener">La Laguna · base del grupo</a>
+        </div>
+      </li>
+      <li>
+        <span class="pin loro"></span>
+        <span class="venue-logo sm"><img src="https://www.google.com/s2/favicons?domain=loroparque.com&sz=64" alt="" loading="lazy"/></span>
+        <div>
+          <strong><a href="https://www.loroparque.com/" target="_blank" rel="noopener">Loro Parque</a></strong><br/>
+          <a href="https://maps.google.com/?q=Loro+Parque+Puerto+de+la+Cruz" target="_blank" rel="noopener">Puerto de la Cruz · viernes tarde</a>
+        </div>
+      </li>
+      <li>
+        <span class="pin brunelli"></span>
+        <span class="venue-logo sm"><img src="https://www.google.com/s2/favicons?domain=brunellis.com&sz=64" alt="" loading="lazy"/></span>
+        <div>
+          <strong><a href="https://brunellis.com/en/" target="_blank" rel="noopener">Brunelli's Steakhouse</a></strong><br/>
+          <a href="https://maps.google.com/?q=Brunelli%27s+Steakhouse+Punta+Brava" target="_blank" rel="noopener">Punta Brava · cena del viernes</a>
+        </div>
+      </li>
+      <li>
+        <span class="pin siam"></span>
+        <span class="venue-logo sm"><img src="https://www.google.com/s2/favicons?domain=siampark.net&sz=64" alt="" loading="lazy"/></span>
+        <div>
+          <strong><a href="https://siampark.net/" target="_blank" rel="noopener">Siam Park</a></strong><br/>
+          <a href="https://maps.google.com/?q=Siam+Park+Costa+Adeje" target="_blank" rel="noopener">Costa Adeje · sábado</a>
+        </div>
+      </li>
+      <li>
+        <span class="pin bola"></span>
+        <span class="venue-logo sm"><img src="https://www.google.com/s2/favicons?domain=chefjorgebosch.com&sz=64" alt="" loading="lazy"/></span>
+        <div>
+          <strong><a href="https://chefjorgebosch.com/" target="_blank" rel="noopener">La Bola de Jorge Bosch</a></strong><br/>
+          <a href="https://maps.google.com/?q=La+Bola+de+Jorge+Bosch+Tegueste" target="_blank" rel="noopener">Tegueste · almuerzo domingo</a>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
@@ -1393,22 +1507,25 @@
     <ul class="checklist">
       <li class="check">
         <div class="checkbox"></div>
+        <span class="venue-logo md ck-logo"><img src="https://www.google.com/s2/favicons?domain=loroparque.com&sz=128" alt="" loading="lazy"/></span>
         <div>
-          <div class="ck-title">Loro Parque · entradas online <span class="status-pill pending">pendiente</span></div>
+          <div class="ck-title"><a href="https://www.loroparque.com/" target="_blank" rel="noopener">Loro Parque · entradas online</a> <span class="status-pill pending">pendiente</span></div>
           <div class="ck-detail">Comprar online la noche del jueves para el descuento. 11 pax.</div>
         </div>
       </li>
       <li class="check">
         <div class="checkbox"></div>
+        <span class="venue-logo md ck-logo"><img src="https://www.google.com/s2/favicons?domain=brunellis.com&sz=128" alt="" loading="lazy"/></span>
         <div>
-          <div class="ck-title">Brunelli's Steakhouse · viernes 20:30 <span class="status-pill pending">pendiente</span></div>
+          <div class="ck-title"><a href="https://brunellis.com/en/" target="_blank" rel="noopener">Brunelli's Steakhouse</a> · viernes 20:30 <span class="status-pill pending">pendiente</span></div>
           <div class="ck-detail">Terraza para 11 pax. Avisar de cumpleaños + tarta sorpresa. Alternativas: La Cúpula (Hotel Botánico) o El Taller Seve Díaz.</div>
         </div>
       </li>
       <li class="check">
         <div class="checkbox"></div>
+        <span class="venue-logo md ck-logo"><img src="https://www.google.com/s2/favicons?domain=siampark.net&sz=128" alt="" loading="lazy"/></span>
         <div>
-          <div class="ck-title">Siam Park · cabaña VIP familiar <span class="status-pill pending">pendiente</span></div>
+          <div class="ck-title"><a href="https://siampark.net/" target="_blank" rel="noopener">Siam Park</a> · cabaña VIP familiar <span class="status-pill pending">pendiente</span></div>
           <div class="ck-detail">Sábado 6 · capacidad 10–12. Indispensable con Luca de 1 mes.</div>
         </div>
       </li>
@@ -1421,8 +1538,9 @@
       </li>
       <li class="check">
         <div class="checkbox"></div>
+        <span class="venue-logo md ck-logo"><img src="https://www.google.com/s2/favicons?domain=chefjorgebosch.com&sz=128" alt="" loading="lazy"/></span>
         <div>
-          <div class="ck-title">Almuerzo del domingo · La Bola de Jorge Bosch <span class="status-pill pending">pendiente</span></div>
+          <div class="ck-title">Almuerzo del domingo · <a href="https://chefjorgebosch.com/" target="_blank" rel="noopener">La Bola de Jorge Bosch</a> <span class="status-pill pending">pendiente</span></div>
           <div class="ck-detail">11 pax, con margen flexible por los vuelos. Alternativas: Tasca 61 o Silbo Gomero.</div>
         </div>
       </li>
