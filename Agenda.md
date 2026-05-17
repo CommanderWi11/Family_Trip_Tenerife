@@ -41,11 +41,12 @@
 - Luca: carrito + porteo, sombra, tomas a demanda. Hay zonas tranquilas para cambio/lactancia.
 - Encargar tarta sorpresa al restaurante de la cena por la tarde (Carmen o Luis llama).
 
-**20:30 — Cena cumpleaños en Puerto de la Cruz**
-- Primera opción: **Brunelli's Steakhouse** (Punta Brava). Terraza vista mar + Teide, carne argentina, family-friendly, hacen bien lo del cumple. Reservar terraza para 11.
-- Alternativas: **La Cúpula** (Hotel Botánico, más formal) · **El Taller Seve Díaz** (más sofisticado).
+**20:00 — Cena cumpleaños en El Monasterio (La Montañeta, Los Realejos)**
+- **Mesón El Monasterio** — antiguo monasterio reconvertido en finca-restaurante (100.000 m²) al pie de la Montañeta del Fraile. Cinco salones, vistas al Valle de La Orotava + Teide, **animales (cabras, burros, patos, pavos reales) y zona de juego** — perfecto para Candela y Leo. Cocina canaria tradicional (carnes a la brasa, papas, postres caseros). Carretera La Montañeta 12. Tel: +34 922 340 707.
+- Reservar para 11 pax, pedir mesa cerca de la zona de animales/juego si es posible. Avisar cumpleaños + tarta.
 - Jota llega para cenar — directo al restaurante (taxi desde TFN o que Carmen lo pase a buscar de camino).
-- Vuelta a La Laguna ~23:00 (35 min).
+- Backups: **Brunelli's Steakhouse** (Punta Brava) · **La Cúpula** (Hotel Botánico) · **El Taller Seve Díaz**.
+- Vuelta a La Laguna ~23:00 (40 min).
 
 ---
 
@@ -92,7 +93,7 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 ## Reservas a hacer YA
 
 1. **Loro Parque** — entradas online viernes 5.
-2. **Brunelli's Steakhouse** — viernes 20:30, terraza, 11 pax. Avisar de cumpleaños + tarta.
+2. **El Monasterio** (La Montañeta, Los Realejos) — viernes 20:00, 11 pax. Avisar de cumpleaños + tarta. Pedir mesa cerca de animales/zona de juego.
 3. **Siam Park** — cabaña VIP familiar sábado 6.
 4. **Cena sábado** — Tasca 61 o La Hoya del Camello, 11 pax.
 5. **Almuerzo domingo** — La Bola de Jorge Bosch, 11 pax (margen flexible por vuelos).
@@ -114,4 +115,4 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 
 ---
 
-*Última actualización: 16 may 2026*
+*Última actualización: 17 may 2026*
