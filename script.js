@@ -1,21 +1,44 @@
 // Countdown to 5 jun 2026 00:00 Atlantic/Canary (UTC+1 in June)
 const TARGET = new Date('2026-06-05T00:00:00+01:00').getTime();
+const BDAY_END = new Date('2026-06-06T00:00:00+01:00').getTime();
 
 function tick() {
     const now = Date.now();
-    const diff = Math.max(0, TARGET - now);
-    const d = Math.floor(diff / 86400000);
-    const h = Math.floor((diff % 86400000) / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
-    const set = (id, v) => {
+    const diff = TARGET - now;
+    const setRaw = (id, v) => {
         const el = document.getElementById(id);
-        if (el) el.textContent = String(v).padStart(2, '0');
+        if (el) el.textContent = v;
     };
-    set('cd-d', d);
-    set('cd-h', h);
-    set('cd-m', m);
-    set('cd-s', s);
+    const setLbl = (sel, v) => {
+        const el = document.querySelector(sel);
+        if (el) el.textContent = v;
+    };
+    if (diff <= 0) {
+        setRaw('cd-d', 'TE');
+        setRaw('cd-h', 'NE');
+        setRaw('cd-m', 'RI');
+        setRaw('cd-s', 'FE');
+        const cd = document.getElementById('countdown');
+        if (cd && !cd.classList.contains('done')) {
+            cd.classList.add('done');
+            cd.querySelectorAll('.cd-lbl').forEach(el => el.textContent = '');
+        }
+    } else {
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        setRaw('cd-d', String(d).padStart(2, '0'));
+        setRaw('cd-h', String(h).padStart(2, '0'));
+        setRaw('cd-m', String(m).padStart(2, '0'));
+        setRaw('cd-s', String(s).padStart(2, '0'));
+    }
+    // Birthday banner — visible only on 5 jun 2026 (Canary)
+    const banner = document.getElementById('bday-banner');
+    if (banner) {
+        const onBday = now >= TARGET && now < BDAY_END;
+        banner.hidden = !onBday;
+    }
 }
 tick();
 setInterval(tick, 1000);
