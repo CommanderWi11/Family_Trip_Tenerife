@@ -311,6 +311,19 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
   width:24px;height:24px;border-radius:6px;
   margin-bottom:.4rem;background:#fff;padding:2px;
 }
+.venue-logo-bg{
+  position:absolute;
+  right:-30px;bottom:-30px;
+  width:180px;height:180px;
+  border-radius:32px;
+  background:transparent;padding:0;
+  opacity:.32;
+  filter:blur(2.5px) saturate(1.3) drop-shadow(0 0 28px rgba(255,46,147,.55));
+  z-index:0;
+  pointer-events:none;
+  object-fit:contain;
+}
+.step-card > *:not(.venue-logo-bg){position:relative;z-index:1}
 .step-icon{
   position:absolute;right:1rem;top:1rem;
   font-size:1.4rem;color:var(--cyan);
@@ -381,6 +394,17 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
   width:54px;height:54px;border-radius:14px;background:#fff;padding:6px;
   box-shadow:0 4px 12px rgba(0,0,0,.3);margin-bottom:.5rem;
 }
+.venue-icon-bg{
+  position:absolute;
+  right:-30px;bottom:-30px;
+  font-size:200px;line-height:1;
+  color:var(--gold);
+  opacity:.18;
+  filter:blur(2px) drop-shadow(0 0 30px rgba(255,215,0,.5));
+  z-index:0;
+  pointer-events:none;
+}
+.feature-card.card-dark > *:not(.venue-icon-bg){position:relative;z-index:1}
 
 .day-list{font-size:.88rem;color:rgba(255,255,255,.92);margin-bottom:1rem}
 .day-list li{
@@ -445,6 +469,51 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 .badge-baby{background:rgba(155,246,197,.18);border-color:rgba(155,246,197,.5);color:var(--mint)}
 .badge-star{background:rgba(255,46,147,.2);border-color:rgba(255,46,147,.6);color:var(--hot-pink)}
 .person p{font-size:.78rem;color:var(--ink-dim)}
+
+.person-group{
+  grid-column:span 2;
+  background:linear-gradient(160deg, rgba(106,27,154,.55), rgba(13,3,34,.75));
+  border:1px solid rgba(255,46,147,.35);
+  border-radius:26px;padding:1.4rem 1.2rem;
+  box-shadow:var(--shadow);
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;
+  transition:transform .2s, border-color .2s;
+}
+.person-group:hover{transform:translateY(-4px);border-color:var(--hot-pink)}
+.person-group .group-title{
+  font-family:'Lilita One',cursive;font-size:1.25rem;color:#fff;
+  margin:.4rem 0 1rem;
+}
+.person-group .role{margin-bottom:.4rem}
+.group-members{
+  display:flex;flex-wrap:wrap;gap:.9rem 1rem;justify-content:center;
+}
+.member{
+  display:flex;flex-direction:column;align-items:center;gap:.35rem;
+  min-width:64px;
+}
+.member .avatar{
+  width:52px;height:52px;font-size:1.2rem;margin:0;
+}
+.member.kid .avatar{background:linear-gradient(135deg,var(--cyan),var(--purple))}
+.member.baby .avatar{background:linear-gradient(135deg,var(--mint),var(--cyan));color:var(--bg-deep)}
+.member.star .avatar{
+  background:linear-gradient(135deg,var(--gold),var(--hot-pink));
+  animation:pulse 2.6s ease-in-out infinite;
+}
+.member-name{
+  font-family:'Lilita One',cursive;font-size:.85rem;color:#fff;
+  line-height:1.1;
+}
+.member-name small{
+  display:block;font-family:'Montserrat',sans-serif;font-weight:600;
+  font-size:.65rem;color:var(--ink-dim);letter-spacing:.04em;
+  margin-top:.15rem;
+}
+@media (max-width:720px){
+  .person-group{grid-column:span 1}
+}
 
 /* ---------- map ---------- */
 .map-section{padding:60px 0 80px}
