@@ -66,9 +66,8 @@
 
 **Cena sábado — informal en La Laguna**
 - Cerca del hotel para no mover más a Luca/Leo.
-- Recomendación: **Tasca 61** o **La Hoya del Camello** (tradicional canario, niños bienvenidos).
-- Alternativa más cuidada: **Tasca El Obispado**.
-- Si alguien quiere algo más simple: pizzas en **Trastevere**.
+- **Abierta a sugerencias** — que cada uno proponga, decidimos sobre la marcha.
+- Opciones a tener en cuenta si nadie propone: **Tasca 61**, **La Hoya del Camello**, **Tasca El Obispado** (tradicional canario, niños bienvenidos), o pizzas en **Trastevere**.
 
 ---
 
@@ -85,7 +84,7 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 - Alternativa: **Tasca 61** o **Silbo Gomero**.
 
 **Tarde — Visita a casa de Luis y Colombina**
-- Plan especial: la familia pasa por casa a ver dónde vive Luis y conocer a Luca en su entorno. Café, sobremesa relajada.
+- Plan especial: la familia pasa por casa a ver dónde vive Luis y conocer a Leo & Luca en su entorno. Café, sobremesa relajada.
 - Despedidas escalonadas según los vuelos de cada uno (Angeles vuelve al puerto si toca, resto a TFN/TFS).
 
 ---
@@ -95,7 +94,7 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 1. **Loro Parque** — entradas online viernes 5.
 2. **El Monasterio** (La Montañeta, Los Realejos) — viernes 20:00, 11 pax. Avisar de cumpleaños + tarta. Pedir mesa cerca de animales/zona de juego.
 3. **Siam Park** — cabaña VIP familiar sábado 6.
-4. **Cena sábado** — Tasca 61 o La Hoya del Camello, 11 pax.
+4. **Cena sábado** — abierta a sugerencias del grupo (La Laguna, 11 pax).
 5. **Almuerzo domingo** — La Bola de Jorge Bosch, 11 pax (margen flexible por vuelos).
 6. Regalo pequeño para Candela en Loro Parque (el grande va para el día real 5 jul).
 

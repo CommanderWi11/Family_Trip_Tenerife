@@ -46,7 +46,7 @@ Full detail in `Agenda.md`.
 1. Loro Parque — online entries (night before, for discount)
 2. **El Monasterio** (La Montañeta, Los Realejos) — Fri 20:00, 11 pax, note birthday + cake, request table near animal/play zone if possible
 3. Siam Park VIP family cabaña — Sat 6
-4. Saturday dinner La Laguna — Tasca 61 or La Hoya del Camello, 11 pax
+4. Saturday dinner La Laguna — abierta a sugerencias (deja que el grupo elija), 11 pax
 5. Sunday lunch — La Bola de Jorge Bosch, 11 pax (flexible window)
 6. Small gift for Candela for Loro Parque (main gift saved for 5 Jul)
 
