@@ -58,7 +58,7 @@
 - 09:00 — Salida desde La Laguna hacia Costa Adeje (~1h 10min).
 
 **10:00 — Siam Park**
-- **Reservar cabaña VIP familiar** (capacidad 10–12) — clave con Luca de 1 mes: sombra, nevera, base de operaciones para tomas/siestas/cambios.
+- Buscar zona de sombra estable para Luca (toldos, palmeras, terrazas de restaurantes) — clave con 1 mes: tomas/siestas/cambios sin sol directo.
 - Zonas para Leo y Candela: Lost City · The Beach (olas suaves) · Mai Thai River (Leo siempre pegado a un adulto).
 - Adultos por turnos en toboganes fuertes (Tower of Power, Dragon, Singha). Os relevais con Luca.
 - Comer dentro (Beach Restaurant o Thai House).
@@ -93,7 +93,7 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 
 1. **Loro Parque** — entradas online viernes 5.
 2. **El Monasterio** (La Montañeta, Los Realejos) — viernes 20:00, 11 pax. Avisar de cumpleaños + tarta. Pedir mesa cerca de animales/zona de juego.
-3. **Siam Park** — cabaña VIP familiar sábado 6.
+3. **Siam Park** — entradas online sábado 6.
 4. **Cena sábado** — abierta a sugerencias del grupo (La Laguna, 11 pax).
 5. **Almuerzo domingo** — La Bola de Jorge Bosch, 11 pax (margen flexible por vuelos).
 6. Regalo pequeño para Candela en Loro Parque (el grande va para el día real 5 jul).

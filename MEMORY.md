@@ -21,7 +21,7 @@ Family reunion (11 pax) in Tenerife, hosted by Angeles at **Laguna Gran Hotel, L
 | Day | Plan |
 |---|---|
 | Fri 5 Jun | Loro Parque (15:00–18:00) → Cumple Candela dinner at El Monasterio, La Montañeta (20:00) |
-| Sat 6 Jun | Siam Park (Costa Adeje, VIP cabaña) → informal dinner in La Laguna |
+| Sat 6 Jun | Siam Park (Costa Adeje) → informal dinner in La Laguna |
 | Sun 7 Jun | Casco histórico La Laguna → lunch → visit to Luis & Colombina's home → escalonated departures |
 
 Full detail in `Agenda.md`.
@@ -38,14 +38,15 @@ Full detail in `Agenda.md`.
 - [ ] Confirm Javier's flight (arrival time Friday)
 - [ ] Confirm Jota's Friday-evening flight
 - [ ] Confirm Luisa's Saturday-morning flight
-- [ ] Decide booking owner per reservation (Luis vs. split with Jota/Javier)
 - [ ] Send finalized agenda to family WhatsApp group
+
+**Bookings:** all reservations done by Luis & Colombina.
 
 ## Reservations To Book
 
 1. Loro Parque — online entries (night before, for discount)
 2. **El Monasterio** (La Montañeta, Los Realejos) — Fri 20:00, 11 pax, note birthday + cake, request table near animal/play zone if possible
-3. Siam Park VIP family cabaña — Sat 6
+3. Siam Park — entries Sat 6
 4. Saturday dinner La Laguna — abierta a sugerencias (deja que el grupo elija), 11 pax
 5. Sunday lunch — La Bola de Jorge Bosch, 11 pax (flexible window)
 6. Small gift for Candela for Loro Parque (main gift saved for 5 Jul)
@@ -54,7 +55,6 @@ Full detail in `Agenda.md`.
 
 - Hotel: Laguna Gran Hotel (Angeles invitation) — fixed
 - Friday dinner anchor: **El Monasterio** (La Montañeta, Los Realejos) — finca con animales, salones amplios, vistas Valle de La Orotava + Teide. Brunelli's / La Cúpula / El Taller Seve Díaz quedan como backups.
-- Siam Park VIP cabaña is mandatory given Luca (1 mo) — sombra + base for feeds/changes
 - Sunday afternoon: pass by Luis & Colombina's home (introduce Luca in their environment)
 
 ## Constraints
