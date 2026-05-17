@@ -38,18 +38,26 @@ setInterval(tick, 1000);
     }
 })();
 
-// Mobile menu toggle (basic: scroll to anchor list)
-document.querySelector('.mobile-menu-toggle')?.addEventListener('click', () => {
-    const nav = document.querySelector('nav .nav-links');
-    if (!nav) return;
-    nav.style.display = nav.style.display === 'flex' ? '' : 'flex';
-    nav.style.flexDirection = 'column';
-    nav.style.position = 'absolute';
-    nav.style.top = '100%';
-    nav.style.right = '24px';
-    nav.style.background = 'rgba(13,3,34,.95)';
-    nav.style.padding = '1rem 1.5rem';
-    nav.style.borderRadius = '14px';
-    nav.style.border = '1px solid rgba(255,46,147,.3)';
-    nav.style.boxShadow = '0 12px 30px rgba(0,0,0,.5)';
-});
+// Mobile menu toggle — class on <header>, styled in CSS
+(() => {
+    const header = document.querySelector('header');
+    const btn = document.querySelector('.mobile-menu-toggle');
+    if (!header || !btn) return;
+    const icon = btn.querySelector('i');
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        header.classList.toggle('nav-open');
+        if (icon) icon.className = header.classList.contains('nav-open') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+    // Close on link tap or outside click
+    header.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => {
+        header.classList.remove('nav-open');
+        if (icon) icon.className = 'fa-solid fa-bars';
+    }));
+    document.addEventListener('click', (e) => {
+        if (!header.contains(e.target)) {
+            header.classList.remove('nav-open');
+            if (icon) icon.className = 'fa-solid fa-bars';
+        }
+    });
+})();
