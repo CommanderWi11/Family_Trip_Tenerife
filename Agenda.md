@@ -80,7 +80,7 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 - 11:00 — Paseo por casco histórico de La Laguna (UNESCO): Plaza del Adelantado → Calle Obispo Rey Redondo → Catedral → Iglesia de la Concepción. ~1h, sombras, llevadero con carrito.
 
 **Almuerzo**
-- **La Bola de Jorge Bosch** (canaria moderna, ambiente bonito para cierre) — reservar.
+- **[El Patio de Pedro](https://maps.app.goo.gl/F2ot3qBrAfdEoVgf9)** (auténtico guachinche) — reservar.
 - Alternativa: **Tasca 61** o **Silbo Gomero**.
 
 **Tarde — Visita a casa de Luis y Colombina**
@@ -95,7 +95,7 @@ Vuelos abiertos. Cada uno se va cuando quiera; el plan es flexible.
 2. **El Monasterio** (La Montañeta, Los Realejos) — viernes 20:00, 11 pax. Avisar de cumpleaños + tarta. Pedir mesa cerca de animales/zona de juego.
 3. **Siam Park** — entradas online sábado 6.
 4. **Cena sábado** — abierta a sugerencias del grupo (La Laguna, 11 pax).
-5. **Almuerzo domingo** — La Bola de Jorge Bosch, 11 pax (margen flexible por vuelos).
+5. **Almuerzo domingo** — [El Patio de Pedro](https://maps.app.goo.gl/F2ot3qBrAfdEoVgf9) (auténtico guachinche), 11 pax (margen flexible por vuelos).
 6. Regalo pequeño para Candela en Loro Parque (el grande va para el día real 5 jul).
 
 ## Pendientes

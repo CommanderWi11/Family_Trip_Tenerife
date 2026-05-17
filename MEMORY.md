@@ -48,7 +48,7 @@ Full detail in `Agenda.md`.
 2. **El Monasterio** (La Montañeta, Los Realejos) — Fri 20:00, 11 pax, note birthday + cake, request table near animal/play zone if possible
 3. Siam Park — entries Sat 6
 4. Saturday dinner La Laguna — abierta a sugerencias (deja que el grupo elija), 11 pax
-5. Sunday lunch — La Bola de Jorge Bosch, 11 pax (flexible window)
+5. Sunday lunch — El Patio de Pedro (auténtico guachinche), 11 pax (flexible window) — https://maps.app.goo.gl/F2ot3qBrAfdEoVgf9
 6. Small gift for Candela for Loro Parque (main gift saved for 5 Jul)
 
 ## Key Decisions
