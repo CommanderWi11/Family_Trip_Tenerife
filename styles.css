@@ -426,13 +426,15 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 
 .day-list{font-size:.88rem;color:rgba(255,255,255,.92);margin-bottom:1rem}
 .day-list li{
-  padding:.45rem 0;border-bottom:1px dashed rgba(255,255,255,.15);
-  display:flex;gap:.65rem;align-items:flex-start;
+  padding:.45rem 0 .45rem 60px;
+  border-bottom:1px dashed rgba(255,255,255,.15);
+  position:relative;
 }
 .day-list li:last-child{border-bottom:0}
 .day-list .hour{
-  flex-shrink:0;font-weight:800;color:var(--gold);
-  font-size:.78rem;min-width:54px;
+  position:absolute;left:0;top:.55rem;
+  font-weight:800;color:var(--gold);
+  font-size:.78rem;
   text-shadow:0 0 8px rgba(255,215,0,.5);
 }
 .day-list a{
@@ -615,14 +617,15 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 .newsletter-box > p{font-size:.88rem;color:rgba(255,255,255,.9);margin-bottom:1rem}
 .reservas-list{margin-bottom:.8rem}
 .reservas-list li{
-  display:flex;align-items:center;gap:.55rem;
-  padding:.5rem 0;border-bottom:1px dashed rgba(255,255,255,.25);
-  font-size:.88rem;color:#fff;
+  position:relative;padding:.5rem 0 .5rem 1.6rem;
+  border-bottom:1px dashed rgba(255,255,255,.25);
+  font-size:.88rem;color:#fff;line-height:1.45;
 }
 .reservas-list li:last-child{border-bottom:0}
-.reservas-list li > i{color:var(--gold);font-size:1rem}
+.reservas-list li > i:first-child{
+  position:absolute;left:0;top:.7rem;color:var(--gold);font-size:1rem;
+}
 .reservas-list a{
-  display:inline-flex;align-items:center;gap:.4rem;
   color:#fff;font-weight:800;border-bottom:1px dotted rgba(255,255,255,.5);
 }
 .reservas-list a:hover{color:var(--gold)}
