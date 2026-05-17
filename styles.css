@@ -225,6 +225,22 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
   0%,100%{transform:translateY(0) rotate(-1deg)}
   50%{transform:translateY(-14px) rotate(1.2deg)}
 }
+.cande-img{
+  position:absolute;
+  left:-4%;bottom:0;
+  z-index:3;
+  max-height:480px;width:auto;
+  background:transparent;
+  filter:drop-shadow(8px 18px 26px rgba(0,0,0,.55));
+  animation:cande-float 6.5s ease-in-out infinite;
+  transform-origin:50% 90%;
+  will-change:transform;
+  pointer-events:none;
+}
+@keyframes cande-float{
+  0%,100%{transform:translateY(0) rotate(1deg)}
+  50%{transform:translateY(-10px) rotate(-1.2deg)}
+}
 .neon-six{
   position:absolute;z-index:1;
   font-family:'Lilita One',cursive;
@@ -256,6 +272,7 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
   .hero-container{grid-template-columns:1fr;gap:40px}
   .hero-image{min-height:420px;order:-1}
   .character-img{max-height:440px}
+  .cande-img{max-height:360px;left:0}
   .hero-features{grid-template-columns:1fr;gap:.7rem}
 }
 
