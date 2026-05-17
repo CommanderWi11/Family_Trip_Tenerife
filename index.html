@@ -163,7 +163,7 @@
                 <ul class="day-list">
                     <li><span class="hour">11:00</span> Angeles llega en ferry a Santa Cruz con Carlos + Daniela</li>
                     <li><span class="hour">13:00</span> Carmen + Candela aterrizan en TFN</li>
-                    <li><span class="hour">15:00</span> <a href="https://loroparque.com/" target="_blank" rel="noopener">Loro Parque</a> — orcas, pingüinos, Kinderlandia</li>
+                    <li><span class="hour">15:00</span> <a href="#" class="js-loro-times">Horarios Loro Parque</a> — orcas, pingüinos, Kinderlandia</li>
                     <li><span class="hour">20:00</span> <a href="https://www.mesonelmonasterio.com/" target="_blank" rel="noopener">El Monasterio</a> · cumple Candela <i class="fa-solid fa-cake-candles"></i></li>
                 </ul>
                 <div class="card-spacer"></div>
@@ -420,6 +420,21 @@
         </div>
     </footer>
 
-    <script src="script.js?v=2"></script>
+    <div class="popup-overlay" id="loro-popup" hidden>
+        <div class="popup-card" role="dialog" aria-label="Horario de espectáculos Loro Parque">
+            <button class="popup-close" aria-label="Cerrar">&times;</button>
+            <h3>Loro Parque · Espectáculos</h3>
+            <p class="popup-sub">Todos los shows duran <strong>20 minutos</strong>.</p>
+            <ul class="popup-list">
+                <li><span class="popup-label"><i class="fa-solid fa-otter"></i> Leones Marinos</span><span class="popup-times">09:45 · 10:45 · 13:45 · 14:45</span></li>
+                <li><span class="popup-label"><i class="fa-solid fa-dove"></i> Loros</span><span class="popup-times">10:25 · 12:30 · 14:30 · 15:30 · 16:45</span></li>
+                <li><span class="popup-label"><i class="fa-solid fa-fish-fins"></i> Delfines</span><span class="popup-times">11:00 · 13:00 · 16:15</span></li>
+                <li><span class="popup-label"><i class="fa-solid fa-water"></i> Orcas</span><span class="popup-times">11:55 · 15:15</span></li>
+            </ul>
+            <a href="https://loroparque.com/" target="_blank" rel="noopener" class="btn btn-white w-100 mt-1">Ir a loroparque.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
 </body>
 </html>

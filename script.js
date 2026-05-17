@@ -61,3 +61,18 @@ setInterval(tick, 1000);
         }
     });
 })();
+
+// Loro Parque horarios popup
+(() => {
+    const popup = document.getElementById('loro-popup');
+    if (!popup) return;
+    const open = () => { popup.hidden = false; document.body.style.overflow = 'hidden'; };
+    const close = () => { popup.hidden = true; document.body.style.overflow = ''; };
+    document.querySelectorAll('.js-loro-times').forEach(a => a.addEventListener('click', (e) => {
+        e.preventDefault();
+        open();
+    }));
+    popup.querySelector('.popup-close')?.addEventListener('click', close);
+    popup.addEventListener('click', (e) => { if (e.target === popup) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !popup.hidden) close(); });
+})();

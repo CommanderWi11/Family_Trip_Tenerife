@@ -712,3 +712,44 @@ footer{
   .footer-grid{grid-template-columns:1fr}
   .decorative-col{grid-column:auto}
 }
+
+/* ---------- popup (Loro Parque horarios) ---------- */
+.popup-overlay{
+  position:fixed;inset:0;z-index:2000;
+  background:rgba(8,2,22,.78);backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:center;padding:1.2rem;
+  animation:popup-in .25s ease-out;
+}
+.popup-overlay[hidden]{display:none}
+.popup-card{
+  position:relative;width:100%;max-width:420px;
+  background:linear-gradient(160deg,var(--magenta),var(--purple) 70%,var(--bg-deep));
+  border:1px solid rgba(255,46,147,.45);border-radius:22px;
+  box-shadow:0 24px 60px rgba(0,0,0,.6), 0 0 40px rgba(255,46,147,.25);
+  padding:1.8rem 1.4rem 1.4rem;color:#fff;
+}
+.popup-close{
+  position:absolute;top:.6rem;right:.8rem;
+  background:none;border:0;color:#fff;font-size:1.8rem;line-height:1;cursor:pointer;
+  width:36px;height:36px;border-radius:50%;
+  transition:background .15s;
+}
+.popup-close:hover{background:rgba(255,255,255,.15)}
+.popup-card h3{
+  font-family:'Lilita One',cursive;font-size:1.4rem;color:#fff;
+  margin-bottom:.3rem;text-shadow:0 0 14px rgba(255,255,255,.3);
+}
+.popup-sub{font-size:.85rem;color:rgba(255,255,255,.85);margin-bottom:1rem}
+.popup-list{margin-bottom:1rem}
+.popup-list li{
+  padding:.7rem 0;border-bottom:1px dashed rgba(255,255,255,.2);
+  display:flex;flex-direction:column;gap:.25rem;
+}
+.popup-list li:last-child{border-bottom:0}
+.popup-label{
+  font-family:'Lilita One',cursive;font-size:1rem;color:var(--gold);
+  display:flex;align-items:center;gap:.5rem;
+}
+.popup-label i{font-size:.9rem}
+.popup-times{font-size:.92rem;color:#fff;font-weight:600;letter-spacing:.01em}
+@keyframes popup-in{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
