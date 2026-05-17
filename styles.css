@@ -352,6 +352,12 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 }
 .step-card > *:not(.venue-logo-bg){position:relative;z-index:1}
 .feature-card > *:not(.venue-logo-bg){position:relative;z-index:1}
+.feature-card .btn-white{
+  background:rgba(255,255,255,.55);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.45);
+}
+.feature-card .btn-white:hover{background:rgba(255,255,255,.85)}
 .step-icon{
   position:absolute;right:1rem;top:1rem;
   font-size:1.4rem;color:var(--cyan);
