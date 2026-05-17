@@ -518,17 +518,6 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 .member .avatar{
   width:52px;height:52px;font-size:1.2rem;margin:0;
 }
-.avatar.has-fig{
-  background:transparent;
-  box-shadow:none;
-  overflow:visible;
-  position:relative;
-}
-.avatar.has-fig img{
-  width:160%;height:160%;object-fit:contain;
-  filter:drop-shadow(0 4px 8px rgba(0,0,0,.45));
-  pointer-events:none;
-}
 .member.kid .avatar{background:linear-gradient(135deg,var(--cyan),var(--purple))}
 .member.baby .avatar{background:linear-gradient(135deg,var(--mint),var(--cyan));color:var(--bg-deep)}
 .member.host .avatar{background:linear-gradient(135deg,var(--gold),#ff9a3c);color:var(--bg-deep)}
