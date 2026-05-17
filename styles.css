@@ -498,10 +498,13 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 }
 .member.kid .avatar{background:linear-gradient(135deg,var(--cyan),var(--purple))}
 .member.baby .avatar{background:linear-gradient(135deg,var(--mint),var(--cyan));color:var(--bg-deep)}
+.member.host .avatar{background:linear-gradient(135deg,var(--gold),#ff9a3c);color:var(--bg-deep)}
 .member.star .avatar{
   background:linear-gradient(135deg,var(--gold),var(--hot-pink));
   animation:pulse 2.6s ease-in-out infinite;
 }
+.host-group{border-color:rgba(255,215,0,.45)}
+.host-group:hover{border-color:var(--gold)}
 .member-name{
   font-family:'Lilita One',cursive;font-size:.85rem;color:#fff;
   line-height:1.1;
