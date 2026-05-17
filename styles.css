@@ -163,6 +163,7 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 }
 .glow-text span{
   font-style:italic;
+  display:inline-block;padding-right:.18em;
   background:linear-gradient(180deg,var(--gold) 0%,#ffb347 60%,var(--hot-pink) 100%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 4px 18px rgba(255,215,0,.5));
