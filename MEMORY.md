@@ -2,7 +2,7 @@
 
 **Status:** Planning · agenda drafted, reservations pending
 **Dates:** 5–7 June 2026
-**Last updated:** 2026-05-17
+**Last updated:** 2026-05-18
 
 ## Summary
 
@@ -47,7 +47,7 @@ Full detail in `Agenda.md`.
 1. Loro Parque — online entries (night before, for discount)
 2. **El Monasterio** (La Montañeta, Los Realejos) — Fri 20:00, 11 pax, note birthday + cake, request table near animal/play zone if possible
 3. Siam Park — entries Sat 6
-4. Saturday dinner La Laguna — abierta a sugerencias (deja que el grupo elija), 11 pax
+4. Saturday dinner La Laguna — 20:00, La Fam vota para elegir sitio, 11 pax
 5. Sunday lunch — El Patio de Pedro (auténtico guachinche), 11 pax (flexible window) — https://maps.app.goo.gl/F2ot3qBrAfdEoVgf9
 6. Small gift for Candela for Loro Parque (main gift saved for 5 Jul)
 
