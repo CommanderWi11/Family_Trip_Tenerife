@@ -569,20 +569,19 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 }
 .map-wrap iframe{display:block;filter:saturate(.85) hue-rotate(-10deg);height:520px}
 .map-legend-wrap{display:flex;flex-direction:column;gap:1rem}
-.legend-header{margin-bottom:.4rem}
+.legend-header{margin-bottom:.4rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:.4rem}
 .legend-header h2{
   font-family:'Lilita One',cursive;
   font-size:clamp(1.8rem,3vw,2.4rem);color:#fff;
-  display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;
 }
 .legend-arrow{
-  color:var(--gold);font-size:1.3rem;
+  color:var(--gold);font-size:1.4rem;
   filter:drop-shadow(0 0 10px rgba(255,215,0,.6));
-  animation:legend-bounce 1.6s ease-in-out infinite;
+  animation:legend-bounce-y 1.4s ease-in-out infinite;
 }
-@keyframes legend-bounce{
-  0%,100%{transform:translateX(0)}
-  50%{transform:translateX(8px)}
+@keyframes legend-bounce-y{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(8px)}
 }
 .map-cta{text-align:center;margin:.4rem 0 1.4rem}
 .map-legend{
@@ -591,11 +590,6 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 @media (max-width:820px){
   .map-grid{grid-template-columns:1fr;gap:1.2rem}
   .map-wrap iframe{height:360px}
-  .legend-arrow{animation:legend-bounce-down 1.6s ease-in-out infinite;transform:rotate(90deg)}
-  @keyframes legend-bounce-down{
-    0%,100%{transform:rotate(90deg) translateX(0)}
-    50%{transform:rotate(90deg) translateX(8px)}
-  }
 }
 .map-pin{
   display:flex;align-items:center;gap:.7rem;
