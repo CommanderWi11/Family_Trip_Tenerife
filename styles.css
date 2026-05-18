@@ -359,6 +359,13 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
   filter:saturate(1.4) drop-shadow(0 0 24px rgba(255,46,147,.5));
   mix-blend-mode:multiply;
 }
+.feature-card.card-dark .venue-logo-bg{
+  right:1.2rem;bottom:4.5rem;
+  width:150px;height:auto;
+  opacity:.75;
+  mix-blend-mode:screen;
+  filter:drop-shadow(0 0 18px rgba(255,215,0,.55)) drop-shadow(0 0 6px rgba(255,255,255,.4));
+}
 .step-icon{
   position:absolute;right:1rem;top:1rem;
   font-size:1.4rem;color:var(--cyan);
