@@ -71,8 +71,8 @@ Full detail in `Agenda.md`.
 ## Public Family-Facing Page
 
 - **File:** `index.html` (single-file static page, Spanish, read-only)
-- **Hosting:** GitHub Pages on `CommanderWi11/family-trip-tenerife` (repo must be **public** for free Pages)
-- **URL (once enabled):** https://commanderwi11.github.io/family-trip-tenerife/
+- **Hosting:** GitHub Pages on `CommanderWi11/Family_Trip_Tenerife` (repo must be **public** for free Pages)
+- **URL (once enabled):** https://commanderwi11.github.io/Family_Trip_Tenerife/ (case-sensitive after 2026-05-19 rename)
 - **Privacy model:** security-by-obscurity. Repo is public, but URL is shared only via WhatsApp.
 - **Sanitization rules — do NOT add to `index.html`:**
   - Last names (first names only)
