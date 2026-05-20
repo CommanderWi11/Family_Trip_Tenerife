@@ -609,6 +609,14 @@ nav .nav-links{display:flex;gap:1.6rem;align-items:center}
 }
 .map-pin:hover{transform:translateY(-3px);border-color:var(--hot-pink)}
 .map-pin img{width:28px;height:28px;border-radius:8px;background:#fff;padding:3px;flex-shrink:0}
+.map-pin-icon{
+  width:28px;height:28px;border-radius:8px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:14px;flex-shrink:0;color:#fff;
+}
+.map-pin-icon.zoka{background:linear-gradient(135deg,#7b4b2a,#3d2616)}
+.map-pin-icon.patio{background:linear-gradient(135deg,#c0533b,#7a2418)}
+.popup-cake{margin-top:1.1rem}
 .map-pin strong{display:block;color:#fff;font-size:.92rem;font-weight:800}
 .map-pin span{display:block;font-size:.72rem;color:var(--ink-dim)}
 
