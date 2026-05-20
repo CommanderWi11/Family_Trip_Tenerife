@@ -767,6 +767,17 @@ footer{
   .decorative-col{grid-column:auto}
 }
 
+/* ---------- cumple link (whole phrase clickable) ---------- */
+.cumple-link{
+  color:#5ec8ff;
+  text-decoration:underline;
+  text-underline-offset:2px;
+  cursor:pointer;
+  transition:color .15s ease;
+}
+.cumple-link:hover{color:#9ad8ff}
+.cumple-link i{color:inherit}
+
 /* ---------- inline info icon ---------- */
 .info-link{
   display:inline-flex;align-items:center;justify-content:center;
