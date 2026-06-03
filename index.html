@@ -260,13 +260,19 @@
             <h2>La <span class="script-text pink">familia</span></h2>
         </div>
         <div class="container people-grid">
+            <div class="person-group entrada-cta">
+                <div class="entrada-cta-icon"><i class="fa-solid fa-qrcode"></i></div>
+                <h3 class="entrada-cta-title">Entradas aquí</h3>
+                <p class="entrada-cta-text">Pulsa sobre cada miembro para ver su <strong>QR de entrada</strong> a los parques <i class="fa-solid fa-ticket"></i></p>
+            </div>
+
             <div class="person-group host-group">
                 <div class="group-roles">
                     <span class="role badge-host">Anfitriona</span>
                     <span class="role">Ferry vie 11:00</span>
                 </div>
                 <div class="group-members">
-                    <div class="member host">
+                    <div class="member host has-ticket" data-entrada="mami" role="button" tabindex="0" aria-label="Ver entrada de Mami">
                         <div class="avatar">M</div>
                         <span class="member-name">Mami</span>
                     </div>
@@ -286,11 +292,11 @@
                         <div class="avatar">Co</div>
                         <span class="member-name">Colombina</span>
                     </div>
-                    <div class="member kid">
+                    <div class="member kid has-ticket" data-entrada="leo" role="button" tabindex="0" aria-label="Ver entrada de Leo">
                         <div class="avatar">Le</div>
                         <span class="member-name">Leo</span>
                     </div>
-                    <div class="member baby">
+                    <div class="member baby has-ticket" data-entrada="luca" role="button" tabindex="0" aria-label="Ver entrada de Luca">
                         <div class="avatar">Lu</div>
                         <span class="member-name">Luca</span>
                     </div>
@@ -302,15 +308,15 @@
                     <span class="role">Carmen + Candela vie 13:00 · Jota vie noche</span>
                 </div>
                 <div class="group-members">
-                    <div class="member">
+                    <div class="member has-ticket" data-entrada="carmen" role="button" tabindex="0" aria-label="Ver entrada de Carmen">
                         <div class="avatar">Ca</div>
                         <span class="member-name">Carmen</span>
                     </div>
-                    <div class="member kid star">
+                    <div class="member kid star has-ticket" data-entrada="candela" role="button" tabindex="0" aria-label="Ver entrada de Candela">
                         <div class="avatar">Cd</div>
                         <span class="member-name">Candela</span>
                     </div>
-                    <div class="member">
+                    <div class="member has-ticket entrada-siam" data-entrada="jota" role="button" tabindex="0" aria-label="Ver entrada de Jota">
                         <div class="avatar">J</div>
                         <span class="member-name">Jota</span>
                     </div>
@@ -322,11 +328,11 @@
                     <span class="role">Ferry vie 11:00 con Mami</span>
                 </div>
                 <div class="group-members">
-                    <div class="member">
+                    <div class="member has-ticket" data-entrada="carlos" role="button" tabindex="0" aria-label="Ver entrada de Carlos">
                         <div class="avatar">Cl</div>
                         <span class="member-name">Carlos</span>
                     </div>
-                    <div class="member">
+                    <div class="member has-ticket" data-entrada="daniela" role="button" tabindex="0" aria-label="Ver entrada de Daniela">
                         <div class="avatar">D</div>
                         <span class="member-name">Daniela</span>
                     </div>
@@ -338,11 +344,11 @@
                     <span class="role">Javi vie desayuno · Luisa sáb mañana</span>
                 </div>
                 <div class="group-members">
-                    <div class="member">
+                    <div class="member has-ticket entrada-siam" data-entrada="luisa" role="button" tabindex="0" aria-label="Ver entrada de Luisa">
                         <div class="avatar">Ls</div>
                         <span class="member-name">Luisa</span>
                     </div>
-                    <div class="member">
+                    <div class="member has-ticket" data-entrada="javi" role="button" tabindex="0" aria-label="Ver entrada de Javi">
                         <div class="avatar">J</div>
                         <span class="member-name">Javi</span>
                     </div>
@@ -433,6 +439,22 @@
         </div>
     </div>
 
-    <script src="script.js?v=5"></script>
+    <div class="popup-overlay" id="qr-popup" hidden>
+        <div class="popup-card qr-card" role="dialog" aria-label="Entrada del parque">
+            <button class="popup-close" aria-label="Cerrar">&times;</button>
+            <h3 id="qr-name">—</h3>
+            <p class="popup-sub" id="qr-tipo">—</p>
+            <div class="qr-frame"><img id="qr-img" alt="Código QR de la entrada" src=""></div>
+            <div class="qr-loc-wrap">
+                <span class="qr-loc-label">Localizador</span>
+                <code class="qr-loc" id="qr-loc">—</code>
+            </div>
+            <div class="qr-parks" id="qr-parks"></div>
+            <p class="qr-note"><i class="fa-solid fa-mobile-screen-button"></i> Muestra este código en la entrada del parque.</p>
+        </div>
+    </div>
+
+    <script src="qr-data.js?v=1"></script>
+    <script src="script.js?v=6"></script>
 </body>
 </html>

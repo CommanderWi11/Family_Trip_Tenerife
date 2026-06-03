@@ -1,0 +1,3 @@
+# Ticket PDFs hold PII (full name, email, postal code) — never publish to this public repo.
+# QR codes are extracted into qr-data.js (codes only, no PII).
+Resources/*.pdf

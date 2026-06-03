@@ -101,3 +101,45 @@ function wirePopup(popupId, triggerSelector) {
 }
 wirePopup('loro-popup', '.js-loro-times');
 wirePopup('monasterio-popup', '.js-monasterio-info');
+
+// Entradas (QR) popup — populated per family member
+(function wireEntradas() {
+    const data = window.ENTRADAS || {};
+    const popup = document.getElementById('qr-popup');
+    if (!popup) return;
+    const elName = document.getElementById('qr-name');
+    const elTipo = document.getElementById('qr-tipo');
+    const elImg = document.getElementById('qr-img');
+    const elLoc = document.getElementById('qr-loc');
+    const elParks = document.getElementById('qr-parks');
+
+    const close = () => { popup.hidden = true; document.body.style.overflow = ''; };
+    const open = (key) => {
+        const e = data[key];
+        if (!e) return;
+        elName.textContent = e.name;
+        elTipo.textContent = e.tipo;
+        elImg.src = e.qr;
+        elImg.alt = 'Código QR de la entrada de ' + e.name;
+        elLoc.textContent = e.loc;
+        elParks.innerHTML = '';
+        e.parks.split(' + ').forEach(p => {
+            const span = document.createElement('span');
+            span.className = 'qr-park-pill';
+            span.textContent = p;
+            elParks.appendChild(span);
+        });
+        popup.hidden = false;
+        document.body.style.overflow = 'hidden';
+    };
+
+    document.querySelectorAll('[data-entrada]').forEach(el => {
+        el.addEventListener('click', () => open(el.dataset.entrada));
+        el.addEventListener('keydown', (ev) => {
+            if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); open(el.dataset.entrada); }
+        });
+    });
+    popup.querySelector('.popup-close')?.addEventListener('click', close);
+    popup.addEventListener('click', (e) => { if (e.target === popup) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !popup.hidden) close(); });
+})();

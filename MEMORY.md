@@ -80,3 +80,9 @@ Full detail in `Agenda.md`.
   - Flight numbers or ticket references
   - Anything you wouldn't put on a postcard
 - **Updates:** edit `index.html`, commit, push → Pages redeploys in ~1 min.
+
+### QR de entradas (La Familia)
+
+- Clicking a family avatar opens a popup with that person's park-entry QR. Data lives in `qr-data.js` (base64 PNGs extracted from the ticket PDFs in `Resources/`).
+- **Decision (Luis):** QRs embedded **openly** on the public page (accepted exposure; tickets expire after 6 Jun). **Luis & Colombina have NO popup** — they enter Siam on annual passes.
+- Mapping derived from anonymous tickets + verified by decoding each QR: NM "5+1 Twin" = both parks for the extended clan (5 adults + Candela paid-child + Leo/Luca free); Jota & Luisa = Siam-only entries (they skip Loro). **Luca's free ticket is Loro-only** (his QR encodes only 5 Jun).
